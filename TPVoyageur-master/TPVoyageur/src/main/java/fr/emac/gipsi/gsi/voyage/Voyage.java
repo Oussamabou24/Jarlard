@@ -19,7 +19,7 @@ public class Voyage extends AbstractVoyage {
      */
     public Voyage(ArrayList<Planete> listPlanete, AbstractVoyageur simulatedVoyageur) {
         super(listPlanete, simulatedVoyageur);
-        // TODO Auto-generated constructor stub
+        // TODO Auto-generated; constructor stub
     }
 
     /**
@@ -47,6 +47,7 @@ public class Voyage extends AbstractVoyage {
     @Override
     public int showAll() {
         // TODO Auto-generated method stub
+    	//on s'en fout
         return 0;
     }
 
@@ -56,6 +57,7 @@ public class Voyage extends AbstractVoyage {
     @Override
     public void lancement() {
         // TODO Auto-generated method stub
+    	// on s'en fout
 
     }
 
@@ -65,6 +67,7 @@ public class Voyage extends AbstractVoyage {
     @Override
     public void lancementSimuler() {
         // TODO Auto-generated method stub
+    	//calcul trajet
         afficheEcran();
     }
 }
