@@ -14,6 +14,7 @@ public class VoyageurSimuler extends AbstractVoyageur {
      */
     public VoyageurSimuler() {
         // TODO Auto-generated constructor stub
+    	
     }
 
     /* (non-Javadoc)
@@ -22,7 +23,23 @@ public class VoyageurSimuler extends AbstractVoyageur {
     @Override
     protected void forward() {
         // TODO Auto-generated method stub
-
+    	String direction = getDirection(); // S
+    	if (direction == "S")   {
+    		getPosBody().setX(getPosBody().getX() + 1);
+    		getPosTete().setX(getPosTete().getX()+1);
+    		}
+    	if (direction == "N") {
+    		getPosBody().setX(getPosBody().getX()-1);
+    		getPosTete().setX(getPosTete().getX()-1);
+    		}
+    	if (direction == "E") {
+    		getPosBody().setY(getPosBody().getY()+1);
+    		getPosTete().setY(getPosTete().getY()+1);	
+    		}
+    	if (direction == "W") {
+    		getPosBody().setY(getPosBody().getY()-1);
+    		getPosTete().setY(getPosTete().getY()-1);
+    		}
     }
 
     /* (non-Javadoc)
@@ -31,7 +48,23 @@ public class VoyageurSimuler extends AbstractVoyageur {
     @Override
     protected void backward() {
         // TODO Auto-generated method stub
-
+    	String direction = getDirection(); // S
+    	if (direction == "S")   {
+    		getPosBody().setX(getPosBody().getX() - 1);
+    		getPosTete().setX(getPosTete().getX()-1);
+    		}
+    	if (direction == "N") {
+    		getPosBody().setX(getPosBody().getX()+1);
+    		getPosTete().setX(getPosTete().getX()+1);
+    		}
+    	if (direction == "E") {
+    		getPosBody().setY(getPosBody().getY()-1);
+    		getPosTete().setY(getPosTete().getY()-1);	
+    		}
+    	if (direction == "W") {
+    		getPosBody().setY(getPosBody().getY()+1);
+    		getPosTete().setY(getPosTete().getY()+1);
+    		}
     }
 
     /* (non-Javadoc)
@@ -40,6 +73,23 @@ public class VoyageurSimuler extends AbstractVoyageur {
     @Override
     protected void left() {
         // TODO Auto-generated method stub
+    	String direction = getDirection(); // S
+    	if (direction == "S")   {
+    		getPosTete().setX(getPosTete().getX()-1);
+    		getPosTete().setY(getPosTete().getY()-1);
+    		}
+    	if (direction == "N") {
+    		getPosTete().setX(getPosTete().getX()+1);
+    		getPosTete().setY(getPosTete().getY()+1);
+    		}
+    	if (direction == "E") {
+    		getPosTete().setX(getPosTete().getX()+1);
+    		getPosTete().setY(getPosTete().getY()-1);	
+    		}
+    	if (direction == "W") {
+    		getPosTete().setX(getPosTete().getX()-1);
+    		getPosTete().setY(getPosTete().getY()+1);
+    		}
     }
 
     /* (non-Javadoc)
@@ -48,5 +98,22 @@ public class VoyageurSimuler extends AbstractVoyageur {
     @Override
     protected void right() {
         // TODO Auto-generated method stub
+    	String direction = getDirection(); // S
+    	if (direction == "S")   {
+    		getPosTete().setX(getPosTete().getX()-1);
+    		getPosTete().setY(getPosTete().getY()+1);
+    		}
+    	if (direction == "N") {
+    		getPosTete().setX(getPosTete().getX()+1);
+    		getPosTete().setY(getPosTete().getY()-1);
+    		}
+    	if (direction == "E") {
+    		getPosTete().setX(getPosTete().getX()-1);
+    		getPosTete().setY(getPosTete().getY()-1);	
+    		}
+    	if (direction == "W") {
+    		getPosTete().setX(getPosTete().getX()+1);
+    		getPosTete().setY(getPosTete().getY()+1);
+    		}
     }
 }
