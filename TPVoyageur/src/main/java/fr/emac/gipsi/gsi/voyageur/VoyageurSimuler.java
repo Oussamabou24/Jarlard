@@ -107,7 +107,6 @@ public class VoyageurSimuler extends AbstractVoyageur {
     		getPosTete().setX(getPosTete().getX()-1);
     		getPosTete().setY(getPosTete().getY()+1);
     		setDirection("E");
-
     		    	}
     	else if (direction == "N") {
     		getPosTete().setX(getPosTete().getX()+1);
@@ -116,8 +115,8 @@ public class VoyageurSimuler extends AbstractVoyageur {
     	}
     	else if (direction == "E") {
     		getPosTete().setX(getPosTete().getX()-1);
-    		getPosTete().setY(getPosTete().getY()-1);
-    		setDirection("N");
+    	 	getPosTete().setY(getPosTete().getY()-1);
+    	 	setDirection("N");
     	}
     	else if (direction == "W") {
     		getPosTete().setX(getPosTete().getX()+1);
