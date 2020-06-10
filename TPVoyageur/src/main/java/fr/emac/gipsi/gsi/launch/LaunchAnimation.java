@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package fr.emac.gipsi.gsi.launch;
 
@@ -14,25 +14,21 @@ import fr.emac.gipsi.gsi.ecran.ListScreen;
  */
 public class LaunchAnimation {
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		
-		AbstractAnimation aa = new AnimationFlash();
-		aa.setEcranDeb(ListScreen.first());
-		aa.setEcranFin(ListScreen.second());
-		
-		aa.runAnimation();
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
+    	for (int i=1;i<=20; i++) {
 
-		aa.wait(1000);
-		
-		AbstractAnimation ab = new AnimationFlash();
-		ab.setEcranDeb(ListScreen.second());
-		ab.setEcranFin(ListScreen.first());
-		
-		ab.runAnimation();
+        AbstractAnimation aa = new AnimationFlash();
+        aa.setEcranDeb(ListScreen.nyancat1());
+        aa.setEcranFin(ListScreen.nyancatqueueenbas());
 
-	}
+        aa.runAnimation();
+
+        aa.wait(200);}
+
+
+    }
 
 }
