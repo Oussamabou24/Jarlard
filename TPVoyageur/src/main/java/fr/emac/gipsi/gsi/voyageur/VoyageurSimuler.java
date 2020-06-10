@@ -27,15 +27,15 @@ public class VoyageurSimuler extends AbstractVoyageur {
     		getPosBody().setX(getPosBody().getX() + 1);
     		getPosTete().setX(getPosTete().getX()+1);
     		    	}
-    	if (direction == "N") {
+    	else if (direction == "N") {
     		getPosBody().setX(getPosBody().getX()-1);
     		getPosTete().setX(getPosTete().getX()-1);
     	}
-    	if (direction == "E") {
+    	else if (direction == "E") {
     		getPosBody().setY(getPosBody().getY()+1);
     		getPosTete().setY(getPosTete().getY()+1);	
     	}
-    	if (direction == "W") {
+    	else if (direction == "W") {
     		getPosBody().setY(getPosBody().getY()-1);
     		getPosTete().setY(getPosTete().getY()-1);
     		}
@@ -53,15 +53,15 @@ public class VoyageurSimuler extends AbstractVoyageur {
     		getPosBody().setX(getPosBody().getX() - 1);
     		getPosTete().setX(getPosTete().getX()-1);
     		    	}
-    	if (direction == "N") {
+    	else if (direction == "N") {
     		getPosBody().setX(getPosBody().getX()+1);
     		getPosTete().setX(getPosTete().getX()+1);
     	}
-    	if (direction == "E") {
+    	else if (direction == "E") {
     		getPosBody().setY(getPosBody().getY()-1);
     		getPosTete().setY(getPosTete().getY()-1);	
     	}
-    	if (direction == "W") {
+    	else if (direction == "W") {
     		getPosBody().setY(getPosBody().getY()+1);
     		getPosTete().setY(getPosTete().getY()+1);
     		}
@@ -77,19 +77,22 @@ public class VoyageurSimuler extends AbstractVoyageur {
     	if (direction == "S")   {
     		getPosTete().setX(getPosTete().getX()-1);
     		getPosTete().setY(getPosTete().getY()-1);
-
+    		setDirection("W");
     		    	}
-    	if (direction == "N") {
+    	else if (direction == "N") {
     		getPosTete().setX(getPosTete().getX()+1);
     		getPosTete().setY(getPosTete().getY()+1);
+    		setDirection("E");
     	}
-    	if (direction == "E") {
+    	else if (direction == "E") {
     		getPosTete().setX(getPosTete().getX()+1);
-    		getPosTete().setY(getPosTete().getY()-1);	
+    		getPosTete().setY(getPosTete().getY()-1);
+    		setDirection("S");
     	}
-    	if (direction == "W") {
+    	else if (direction == "W") {
     		getPosTete().setX(getPosTete().getX()-1);
     		getPosTete().setY(getPosTete().getY()+1);
+    		setDirection("N");
     		}
     }
 
@@ -103,19 +106,23 @@ public class VoyageurSimuler extends AbstractVoyageur {
     	if (direction == "S")   {
     		getPosTete().setX(getPosTete().getX()-1);
     		getPosTete().setY(getPosTete().getY()+1);
+    		setDirection("E");
 
     		    	}
-    	if (direction == "N") {
+    	else if (direction == "N") {
     		getPosTete().setX(getPosTete().getX()+1);
     		getPosTete().setY(getPosTete().getY()-1);
+    		setDirection("W");
     	}
-    	if (direction == "E") {
+    	else if (direction == "E") {
     		getPosTete().setX(getPosTete().getX()-1);
-    		getPosTete().setY(getPosTete().getY()-1);	
+    		getPosTete().setY(getPosTete().getY()-1);
+    		setDirection("N");
     	}
-    	if (direction == "W") {
+    	else if (direction == "W") {
     		getPosTete().setX(getPosTete().getX()+1);
     		getPosTete().setY(getPosTete().getY()+1);
+    		setDirection("S");
     		}
     }
 }
