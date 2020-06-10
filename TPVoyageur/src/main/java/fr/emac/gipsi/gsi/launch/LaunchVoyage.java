@@ -93,7 +93,7 @@ public class LaunchVoyage {
 			voyage.afficheEcran();
 			voyage.wait(500);
 		}
-
+		"clara la bg"
 
 
     }
